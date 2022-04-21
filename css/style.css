@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #70c4ce;
+}
+canvas{
+    border: 7px solid #fff;
+}
+#app{
+    width: 700px;
+    height: 400px;
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.showLevel{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    color : white;
+    font-size: 90px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+.closeShowLevel{
+    opacity:1;
+}
+.lvBar{
+    position: absolute;
+    z-index:10;
+    top: 35px;
+    left: 30px;
+    color: #fff;
+}
+.lvBar > h1{
+    position: absolute;
+}
+.lvBar > .lv{
+    position: absolute;
+    left: 50px;
+}
+#app > .score{
+    position: absolute;
+    top:25px;
+    z-index: 10;
+    font-size: 120px;
+    opacity:0.2;
+    color: #fff;
+}
+.hpBar{
+    z-index: 10;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 160px;
+}
+.hpBar > h2{
+    color: #000;
+    text-shadow: 1px 1px 0px #fff;
+    float: left;
+}
+.hpBox{
+    width: 100px;
+    height: 15px;
+    border: 4px solid #000;
+    float: right;
+    background-color: #fff;
+}
+.hpBox > .hp{
+    width: 100%;
+    height: 100%;
+    background-color: #fea14a;
+}
+.over{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.over > .box{
+    width: 371px;
+}
+.over > div > a{
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px auto 0 auto;
+}
+.over > div > a > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+a.gamePlayBtn{
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    width: 180px;
+    height: 51px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ctrBar{
+    position: absolute;
+    z-index: 10;
+    top: 250px;
+}
+.ctrBar > a > img{
+    opacity:0.5;
+    width: 150px;
+}
+
+.ctrBar > .leftBtn{
+    position: absolute;
+    right: 205px;
+    top:10px;
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+.ctrBar > .rightBtn{
+    position: absolute;
+    left: 220px;
+    top: 10px;
+}

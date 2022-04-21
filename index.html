@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>Mario</title>
+<!-- write your code here -->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="mario.js?1623424185168"></script>
+<script src="./ndgmr.Collision.js"></script>
+<link rel="stylesheet" href="./css/style.css"></link>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="app">
+		<div class="lvBar">
+			<h1>Lv.</h1>
+			<h1 class="lv">1</h1>
+		</div>
+		<h1 class="score">0</h1>
+		<h1 class="showLevel" id="level">level</h1>
+		<a class="gamePlayBtn"><img src="./img/play.png" alt=""></a>
+		<div class="over">
+			<div class="box">
+				<img src="./img/gameover.png" alt="">
+				<a class="resetPlay"><img src="./img/play.png" alt=""></a>
+			</div>
+		</div>
+		<div class="hpBar">
+			<h2>HP</h2>
+			<div class="hpBox">
+				<div class="hp"></div>
+			</div>
+		</div>
+		<div class="ctrBar">
+			<a class="leftBtn"><img src="./img/button.png" alt="leftBtn"></a>
+			<a class="rightBtn"><img src="./img/button.png" alt="rightBtn"></a>
+		</div>
+			<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:700px; height:400px">
+				<canvas id="canvas" width="700" height="400" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+				<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:700px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>
